@@ -26,7 +26,7 @@ class Verify
 	
 	/**
 	 * 初始化配置数据
-	 * @param array $config [description]
+	 * @param array $config 
 	 */
 	function __construct($config = array())
 	{
@@ -66,8 +66,8 @@ class Verify
 
 	/**
 	 * 生成验证码
-	 * @param  string $value [description]
-	 * @return [type]        [description]
+	 * @param  string $value 
+	 * @return 
 	 */
 	public function getVerify()
 	{
@@ -110,7 +110,7 @@ class Verify
 	/**
 	 * 产生一个随机字符串
 	 * @param  integer $length [验证码长度]
-	 * @return [type]          [返回一个随机字符]
+	 * @return [string]          [返回一个随机字符]
 	 */
 	private function _getStr($length = 4)
 	{
@@ -128,7 +128,7 @@ class Verify
 
 	/**
 	 * 绘制干扰小字
-	 * @return [type] [description]
+	 * @return 
 	 */
 	private function getPixel()
 	{
@@ -147,7 +147,7 @@ class Verify
 
 	/**
 	 * 绘制干扰线段
-	 * @return [type] [description]
+	 * @return
 	 */
 	private function getLine()
 	{
